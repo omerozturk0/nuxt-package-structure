@@ -6,3 +6,5 @@ const integrationPlugin = integrationPluginFactory(createApiClient);
 export {
   integrationPlugin
 }
+
+export * from './types';

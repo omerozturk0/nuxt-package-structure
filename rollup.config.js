@@ -62,7 +62,8 @@ function createEntry(
         '@vue-storefront/commercetools-api': 'commercetoolsApi',
         '@commercetools/sdk-client': 'SdkClient',
         '@commercetools/sdk-middleware-auth': 'SdkMiddlewareAuth',
-        '@commercetools/sdk-middleware-http': 'SdkMiddlewareHttp'
+        '@commercetools/sdk-middleware-http': 'SdkMiddlewareHttp',
+        '@commercetools/api-request-builder': 'apiRequestBuilder'
       },
       file: `lib/${pkg.name}.UNKNOWN.js`,
       format,
