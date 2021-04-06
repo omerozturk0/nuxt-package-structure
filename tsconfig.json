@@ -21,12 +21,7 @@
       "dom"
     ],
     "strict": false,
-    "preserveSymlinks": true,
-    "paths": {
-      "@vue-storefront/core": [
-        "@vue-storefront/core"
-      ]
-    }
+    "preserveSymlinks": true
   },
   "include": [
     "src"
