@@ -124,7 +124,9 @@ if (pkg.unpkg) {
   builds.push(
     createEntry({ format: 'iife' }),
     createEntry({ format: 'iife', minify: true }),
-    createEntry({ format: 'es', isBrowser: true, minify: true })
+    createEntry({ format: 'es', isBrowser: true, minify: true }),
+    createEntry({ format: 'cjs' }),
+    createEntry({ format: 'cjs', minify: true })
   )
 }
 

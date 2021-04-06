@@ -1,6 +1,6 @@
 const path = require('path');
 
-const getCommercetoolsApiConfig = (options, moduleOptions) => {
+const getCommercetoolsApiConfig = (options) => {
   const moduleName = '@vsf-enterprise/commercetools/nuxt' || '@vue-storefront/commercetools/nuxt';
   const modules = [...options.buildModules, ...options.modules];
 
@@ -15,10 +15,10 @@ const getCommercetoolsApiConfig = (options, moduleOptions) => {
 
 // eslint-disable-next-line
 module.exports = function Emakina(moduleOptions) {
-  const ctConfiguration = getCommercetoolsApiConfig(this.options, moduleOptions);
+  const ctConfiguration = getCommercetoolsApiConfig(this.options);
 
   this.addPlugin({
     src: path.resolve(__dirname, 'plugin.js'),
-    options: { ...moduleOptions, ...ctConfiguration },
+    options: { ...moduleOptions, ...ctConfiguration }
   })
 }

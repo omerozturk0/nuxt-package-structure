@@ -2,7 +2,7 @@
   "name": "emakina-lib",
   "version": "1.0.0",
   "description": "The sample package for emakina npm libraries.",
-  "main": "lib/index.esm.js",
+  "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
   "unpkg": "lib/index.js",
   "browser": "lib/index.esm.js",
