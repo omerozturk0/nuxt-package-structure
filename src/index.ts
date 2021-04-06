@@ -1,15 +1,8 @@
-interface FullName {
-  name: string;
-  surname: string;
-}
+import { integrationPluginFactory } from "@vue-storefront/core";
+import { createApiClient } from './config';
 
-const customFunc = (): FullName => {
-  return {
-    name: 'Ömer',
-    surname: 'Öztürk'
-  }
-}
+const integrationPlugin = integrationPluginFactory(createApiClient);
 
 export {
-  customFunc
+  integrationPlugin
 }

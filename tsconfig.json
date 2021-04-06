@@ -24,7 +24,7 @@
     "preserveSymlinks": true,
     "paths": {
       "@vue-storefront/core": [
-        "core/core/src"
+        "@vue-storefront/core"
       ]
     }
   },

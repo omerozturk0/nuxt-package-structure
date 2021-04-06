@@ -57,11 +57,12 @@ function createEntry(
       banner,
       globals: {
         '@vue/composition-api': 'VueCompositionApi',
-        'vue': 'Vue',
         '@vue-storefront/commercetools': 'commercetools',
         '@vue-storefront/core': 'core',
-        'graphql-tag': 'gql',
-        '@vue-storefront/commercetools-api': 'commercetoolsApi'
+        '@vue-storefront/commercetools-api': 'commercetoolsApi',
+        '@commercetools/sdk-client': 'SdkClient',
+        '@commercetools/sdk-middleware-auth': 'SdkMiddlewareAuth',
+        '@commercetools/sdk-middleware-http': 'SdkMiddlewareHttp'
       },
       file: `lib/${pkg.name}.UNKNOWN.js`,
       format,
@@ -80,7 +81,7 @@ function createEntry(
   if (!external) {
     config.plugins.push(resolve(), commonjs())
   } else {
-    config.external = Object.keys(pkg.peerDependencies)
+    config.external = Object.keys(pkg.dependencies)
   }
 
   config.plugins.push(
